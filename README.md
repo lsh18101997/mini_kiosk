@@ -26,5 +26,5 @@ DB의 해당 메뉴의 invertory 필드의 값이 감소하도록 설계함
 
 MultikeysError가 반복적으로 발생함. 시간 내에 해결 실패하여 save()와 연산자로만 구현 완료함
 
-C:/Users/PC2301/Desktop/%EB%AF%B8%EB%8B%88%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC1.JPG
-C:/Users/PC2301/Desktop/%EB%AF%B8%EB%8B%88%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC2.JPG
+![MenuList Image](C:/Users/PC2301/Desktop/%EB%AF%B8%EB%8B%88%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC1.JPG "메뉴 리스트")
+![Order Image](C:/Users/PC2301/Desktop/%EB%AF%B8%EB%8B%88%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC2.JPG "주문 화면")
