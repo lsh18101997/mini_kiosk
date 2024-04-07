@@ -25,3 +25,8 @@ DB의 해당 메뉴의 invertory 필드의 값이 감소하도록 설계함
 값이 감소하도록 설계할 때, POST를 사용하여 구현하고자 하였으나, 
 
 MultikeysError가 반복적으로 발생함. 시간 내에 해결 실패하여 save()와 연산자로만 구현 완료함
+
+![미니키오스크1](https://github.com/lsh18101997/mini_kiosk/assets/100822420/64e725b9-55b2-417f-9681-5701c4b0f68a)
+
+![미니키오스크2](https://github.com/lsh18101997/mini_kiosk/assets/100822420/47d0b70c-af8a-43ec-82a7-4537b4160454)
+
