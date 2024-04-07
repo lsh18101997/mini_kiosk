@@ -6,6 +6,6 @@ app_name = "kiosk"
 
 urlpatterns = [
     path("", views.MenuLV.as_view(), name="index"),
-    path("<slug:slug>", views.MenuDV.as_view(), name="menu_detail"),
+    path("<int:menu_id>", views.order, name="index2"),
     re_path(r'(?P<slug>[-\w]+)/$', views.MenuDV.as_view(), name="menu_detail"),
 ]

@@ -1,36 +1,41 @@
-<h1>Menu List</h1>
-<br>
-{% for menu in menus %}
-<div class="card" style="width: 18rem;">
-    <img src="{{menu.image.url}}" class="card-img-top" alt="{{menu.image}}" style="width:100px; height:100px;">
-    <div class="card-body">
-      <h5 class="card-title"><a href="{% url 'kiosk:menu_detail' menu.slug %}">{{menu.name}}></a>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+{% load static %}
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{% static 'kiosk/style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Menu List</h1>
+  </header>
+  <div id ="wrap">
+    <section>
+    {% for menu in menus %}
+    <div class="card">
+        <img id = "card_img" src="{{menu.image.url}}" class="card_img_top" alt="{{menu.image}}">
+        <div class="card-body">
+          <h5 class="card-title"><a href="{% url 'kiosk:menu_detail' menu.slug %}">{{menu.name}}</a>
+          <p class="card-text">explanation</p>
+          <p class="card-price">{{menu.price}}원</p>
+        </div>
     </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">{{menu.price}}</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
-    </div>
-</div>
-{% endfor %}
+    {% endfor %}
+  </section>
+  <footer>
+  <div>
+      <span>
+          <p id = "page">{% if page_obj.has_previous %}
+          <a href="?page={{page_obj.previous_page_number}}">이전</a>
+          {% endif %}
 
-<br>
+          {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}
 
-<div>
-    <span>
-        {% if page_obj.has_previous %}
-        <a href="?page={{page_obj.previous_page_number}}">PreviousPage</a>
-        {% endif %}
-
-        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
-
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}">NextPage</a>
-        {% endif %}
-    </span>
-</div>
+          {% if page_obj.has_next %}
+          <a href="?page={{ page_obj.next_page_number }}">다음</a>
+          {% endif %}</p>
+      </span>
+  </div>
+  </footer>
+  </div>
+  </body>
+</html>
