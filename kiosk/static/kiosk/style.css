@@ -148,6 +148,11 @@ section {
     padding-left: 60px;
 }
 
+a {
+  text-decoration-line: none;
+  color: inherit;
+}
+
 header {
     display: flex;
     justify-content: center;
