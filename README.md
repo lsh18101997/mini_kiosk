@@ -1,5 +1,9 @@
 # mini_kiosk
 
+![Dashboard Image](https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white)
+![Dashboard Image](https://img.shields.io/badge/Css-1572B6?style=plastic&logo=css3&logoColor=white)
+![Dashboard Image](https://img.shields.io/badge/HTML-E34F26?style=plastic&logo=html5&logoColor=white)
+
 ## 2024.04.03
 
 장고 프로젝트 생성(모델링 고민중)
