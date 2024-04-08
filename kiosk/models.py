@@ -4,10 +4,12 @@ from django.urls import reverse
 # Create your models here.
 class Menu(models.Model):
     name = models.CharField(max_length=100)
+    translate = models.CharField(max_length=100, null=True)
     slug = models.SlugField(verbose_name="SLUG", unique=True, allow_unicode=True)
     price = models.IntegerField(default=0)
     category = models.CharField(max_length=100)
     inventory = models.IntegerField(default=50)
+    explain = models.TextField(null=True)
     image = models.ImageField(upload_to='images/', blank=True, null=True, verbose_name='MENU_IMAGE')
 
     class Meta:

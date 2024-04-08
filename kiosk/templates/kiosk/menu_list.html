@@ -14,9 +14,9 @@
     <div class="card">
         <img id = "card_img" src="{{menu.image.url}}" class="card_img_top" alt="{{menu.image}}">
         <div class="card-body">
-          <h5 class="card-title"><a href="{% url 'kiosk:menu_detail' menu.slug %}">{{menu.name}}</a></h5>
-          <p class="card-text">explain</p>
-          <p class="card-price">{{menu.price}}원</p>
+          <h4 class="card-title"><a href="{% url 'kiosk:menu_detail' menu.slug %}">{{menu.name}}</a></h4>
+          <h5 class="card-text">{{menu.translate}}</h5>
+          <h4 class="card-price">{{menu.price}}원</h4>
         </div>
     </div>
     {% endfor %}

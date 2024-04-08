@@ -8,7 +8,7 @@
 .card {
     float:left;
     width: 200px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 #card_img {
@@ -17,12 +17,32 @@
     border-radius: 20%
 }
 
+.card-title {
+  line-height: 0.5;
+  font-weight: 1000;
+}
+
 .card-text {
-    color: gray;
+  line-height: 0.2;
+  color: gray;
+}
+
+.card-text-detail {
+  padding-top: 30px;
+  padding-right: 80px;
+  line-height: normal;
+  color: gray;
+}
+
+.card-translate_detail {
+  line-height: 0.2;
+  color: rgb(69, 68, 68);
 }
 
 .card-price {
-    color: black;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: black;
 }
 
 #header_img {

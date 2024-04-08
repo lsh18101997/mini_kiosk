@@ -1,13 +1,27 @@
 body {
-    background-image: url(../media/images/cafelogo2.png);
-    background-size: 100%;
+  background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ), url('../media/images/cafelogo2.png');
+    background-size: cover;
     background-repeat: no-repeat;
+    margin: 0;
 }
 
-h1 {
+p {
     color: #fff;
-    text-decoration:solid;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 5px 5px 4px gray;
 }
+
+/* .ibm-plex sans kr-regular {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
 
 a {
     text-decoration-line: none;
@@ -19,7 +33,7 @@ a {
     justify-content: center;
     top:400px;
     bottom: 0;
-    min-height: 130vh;
+    min-height: 20vh;
     position: relative;
     width: 100%;    
 }
@@ -27,7 +41,7 @@ a {
 .custom-btn {
   width: 250px;
   height: 60px;
-  color: #000;
+  color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
@@ -82,11 +96,10 @@ a {
   }
 
   header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     width: 100%;
-	height: 100px; /* 내용물에 따라 알맞는 값 설정 */
-	top: 40px;
-	position: absolute;
+	  height: 100px; /* 내용물에 따라 알맞는 값 설정 */
+	  top: 40px;
+	  position: absolute;
 }
+
