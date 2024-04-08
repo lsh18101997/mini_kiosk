@@ -1,14 +1,6 @@
 body {
-    background: linear-gradient(
-        to bottom,
-        rgba(255,255,255,0) 15%,
-        rgba(255,255,255,0.3) 50%,
-        rgba(255,255,255,0.7) 75%,
-        rgba(255,255,255,0.9) 90%,
-        rgba(255,255,255,1) 100%
-    ),
-    url(../media/images/cafelogo2.png);
-    background-size: 100% 75%;
+    background-image: url(../media/images/cafelogo2.png);
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -33,43 +25,39 @@ a {
 }
 
 .custom-btn {
-    width: 250px;
-    height: 60px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-  }
+  width: 250px;
+  height: 60px;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
 
-.btn-13 {
-    background-color: blanchedalmond;
-    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+  .btn-16 {
     border: none;
-    z-index: 1;
+    color: #000;
   }
 
-  .btn-13:after {
+  .btn-16:after {
     position: absolute;
     content: "";
-    width: 100%;
-    height: 0;
-    bottom: 0;
+    width: 0;
+    height: 100%;
+    top: 0;
     left: 0;
+    direction: rtl;
     z-index: -1;
-    border-radius: 5px;
-    background-color: blanchedalmond;
-    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
     box-shadow:
      -7px -7px 20px 0px #fff9,
      -4px -4px 5px 0px #fff9,
@@ -78,16 +66,18 @@ a {
     transition: all 0.3s ease;
   }
 
-  .btn-13:hover {
-    color: #fff;
+
+  .btn-16:hover {
+    color: #000;
   }
 
-  .btn-13:hover:after {
-    top: 0;
-    height: 100%;
+  .btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
   }
 
-  .btn-13:active {
+  .btn-16:active {
     top: 2px;
   }
 
